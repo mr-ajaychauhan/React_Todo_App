@@ -3,13 +3,6 @@ import { Button, Card, Container, Stack } from "react-bootstrap";
 
 const getLocalItmes = () => {
   let list = localStorage.hasOwnProperty("lists");
-  // console.log(list);
-// for (var x = localStorage.length;  x > 0; x--) {
-//   var key = localStorage.key(x);
-//   var value = localStorage.getItem(key); 
-//   console.log(value);
-// }
-
 
   if (list) {
     return JSON.parse(localStorage.getItem("lists"));
